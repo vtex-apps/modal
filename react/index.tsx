@@ -42,13 +42,9 @@ const ModalComponent: StorefrontComponent = ({
   const onClose = useCallback(() => setOpen(false), [])
 
   const buttonClasses = classNames(
-    `${generateBlockClass(
-      styles.button,
-      blockClass
-    )} t-action pointer pv3 nv3 ph4 nh4 c-action-primary`,
-    {
-      [`${buttonClass}`]: !!buttonClass,
-    }
+    generateBlockClass(styles.button, blockClass),
+    't-action pointer pv3 nv3 ph4 nh4 c-action-primary',
+    buttonClass,
   )
 
   return (
