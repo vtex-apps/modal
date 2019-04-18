@@ -1,0 +1,19 @@
+
+{
+  "editor.modal.title": "Componente Modal",
+  "editor.modal.description": "Un componente que permite renderizar bloques dentro de un modal",
+  "editor.modal.centered.title": "Centralizado",
+  "editor.modal.centered.description": "Coloque true si el modal se debe centralizar en la pantalla",
+  "editor.modal.closeOnEsc.title": "Cerrar con esc",
+  "editor.modal.closeOnEsc.description": "Coloque true si el modal se debe cerrar cuando ESC es apretado",
+  "editor.modal.closeOnOverlayClick.title": "Cerrar al apretar apagado",
+  "editor.modal.closeOnOverlayClick.description": "Coloque true si el modal se debe cerrar si el usuario hace clic fuera de él",
+  "editor.modal.showCloseIcon.title": "Mostrar botón de cierre",
+  "editor.modal.showCloseIcon.description": "Coloque verdadero si el modal debe ser mostrar el botón de cerrar el modal",
+  "editor.modal.buttonLabel.title": "Texto del botón",
+  "editor.modal.buttonLabel.description": "Texto a mostrar dentro del botón de abrir el modal",
+  "editor.modal.buttonClass.title": "Clase de botón",
+  "editor.modal.buttonClass.description": "Pase extra clases de tachyon para modificar el botón y su texto",
+  "editor.modal.blockClass.title": "Clase de bloque",
+  "editor.modal.blockClass.description": "Nombre de la clase del bloque para que se adjunte a las clases predeterminadas del bloque"
+}
