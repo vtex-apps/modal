@@ -8,4 +8,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 
-- **Component** Create the VTEX Store Component Modal_
+- **Component** Create the VTEX Store Component Modal

@@ -31,9 +31,8 @@ To use this app or override the default CSS you need import it in your dependenc
   }
 ```
 
-Then, use `modal` block in your `blocks.json`  like:
+Then, use the `modal` block in your `blocks.json` like:
 
-You can 
 ```json
 "modal": {
     "children": ["rich-text"],
@@ -49,7 +48,7 @@ You can
 
 ### Blocks API
 
-When implementing this app as a block, various inner blocks may be available. The following interface lists the available blocks within product summary and describes if they are required or optional.
+When implementing this app as a block, various inner blocks may be available. The following interface lists the available blocks within modal and describes if they are required or optional.
 
 ```json
 {
@@ -65,7 +64,7 @@ For now this block does not have any required or optional blocks. It allows you 
 
 #### Configuration
 
-Through the Storefront, you can change the product-summary's behavior and interface. However, you also can make in your theme app, as Store theme does.
+Through the Storefront, you can change the modal's behavior and interface. However, you also can make in your theme app, as Store theme does.
 
 | Prop name           | Type      | Description                                                                                 |
 | ------------------- | --------- | ------------------------------------------------------------------------------------------- |
@@ -101,7 +100,7 @@ To use this CSS API, you must add the `styles` builder and create an app styling
 
 #### CSS Namespaces
 
-Below, we describe the namespaces that are defined in the product-summary.
+Below, we describe the namespaces that are defined in the modal.
 
 | Token name                 | Component                                                                                                                                                                                                                                                                                                                                                                     | Description                                                   |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |

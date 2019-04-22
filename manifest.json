@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "title": "Modal",
   "description": "Modal component",
-  "defaultLocale": "en-US",
   "builders": {
     "messages": "1.x",
     "store": "0.x",
