@@ -1,0 +1,18 @@
+{
+  "editor.modal.title": "Component title",
+  "editor.modal.description": "Description of the component",
+  "editor.modal.centered.title": "Title of centered prop on Storefront",
+  "editor.modal.centered.description": "Description of centered prop on Storefront",
+  "editor.modal.closeOnEsc.title": "Title of closeOnEsc prop on Storefront",
+  "editor.modal.closeOnEsc.description": "Description of closeOnEsc prop on Storefront",
+  "editor.modal.closeOnOverlayClick.title": "Title of closeOnOverlayClick prop on Storefront",
+  "editor.modal.closeOnOverlayClick.description": "Description of closeOnOverlayClick prop on Storefront",
+  "editor.modal.showCloseIcon.title": "Title of showCloseIcon prop on Storefront",
+  "editor.modal.showCloseIcon.description": "Description of showCloseIcon prop on Storefront",
+  "editor.modal.buttonLabel.title": "Title of buttonLabel prop on Storefront",
+  "editor.modal.buttonLabel.description": "Description of buttonLabel prop on Storefront",
+  "editor.modal.buttonClass.title": "Title of buttonClass prop on Storefront",
+  "editor.modal.buttonClass.description": "Description of buttonClass prop on Storefront",
+  "editor.modal.blockClass.title": "Title of blockClass prop on Storefront",
+  "editor.modal.blockClass.description": "Description of blockClass prop on Storefront"
+}
