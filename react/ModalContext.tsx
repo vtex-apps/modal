@@ -1,18 +1,20 @@
-import React, { createContext } from 'react'
+import React, { createContext, useContext } from 'react'
 
-const { Consumer, Provider } = createContext({})
+const ModalContext = createContext<ModalContext>({ closeModal: () => {} })
 
 interface ModalContext {
   closeModal: () => void
 }
 
-const modalConsumer = <P extends object>(
+const withModal = <P extends object>(
     WrappedComponent: React.ComponentType<P>
   ): React.FC<P & ModalContext> => 
   (props: P) => (
-    <Consumer>
-      {context => <WrappedComponent {...props} modalContext={context} />}
-    </Consumer>
+    <ModalContext.Consumer>
+      {context => <WrappedComponent {...props} {...context} />}
+    </ModalContext.Consumer>
 )
 
-export default { Provider, modalConsumer }
+const useModal = () => useContext(ModalContext)
+
+export default { useModal, withModal, ModalContext }
