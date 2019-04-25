@@ -9,8 +9,12 @@ import classNames from 'classnames'
 import { generateBlockClass, BlockClass } from '@vtex/css-handles'
 //@ts-ignore
 import { Modal } from 'vtex.styleguide'
+
+import ModalContext from './ModalContext'
 //@ts-ignore
 import styles from './styles.css'
+
+const { Provider } = ModalContext
 
 interface ModalProps {
   centered: boolean
@@ -47,6 +51,8 @@ const ModalComponent: StorefrontComponent = ({
     buttonClass,
   )
 
+  const modalContext = { closeModal: onClose }
+
   return (
     <Fragment>
       <div className={buttonClasses} onClick={onClick} role="button">
@@ -67,7 +73,9 @@ const ModalComponent: StorefrontComponent = ({
               blockClass
             )} flex flex-grow-1`}
           >
-            {children}
+            <Provider value={modalContext}>
+              {children}
+            </Provider>
           </div>
         </Modal>
       </div>
