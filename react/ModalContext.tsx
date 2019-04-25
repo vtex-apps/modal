@@ -17,4 +17,4 @@ const withModal = <P extends object>(
 
 const useModal = () => useContext(ModalContext)
 
-export default { useModal, withModal, ModalContext }
+export default { useModal, withModal, Provider: ModalContext.Provider }

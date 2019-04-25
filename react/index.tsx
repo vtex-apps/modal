@@ -15,7 +15,7 @@ import Context from './ModalContext'
 //@ts-ignore
 import styles from './styles.css'
 
-const { ModalContext } = Context
+const { Provider } = Context
 
 interface ModalProps {
   centered: boolean
@@ -74,9 +74,9 @@ const ModalComponent: StorefrontComponent = ({
               blockClass
             )} flex flex-grow-1`}
           >
-            <ModalContext.Provider value={modalContext}>
+            <Provider value={modalContext}>
               {children}
-            </ModalContext.Provider>
+            </Provider>
           </div>
         </Modal>
       </div>
