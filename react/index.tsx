@@ -4,13 +4,18 @@ import React, {
   ReactElement,
   useState,
   useCallback,
+  useMemo
 } from 'react'
 import classNames from 'classnames'
 import { generateBlockClass, BlockClass } from '@vtex/css-handles'
 //@ts-ignore
 import { Modal } from 'vtex.styleguide'
+
+import Context from './ModalContext'
 //@ts-ignore
 import styles from './styles.css'
+
+const { Provider } = Context
 
 interface ModalProps {
   centered: boolean
@@ -47,6 +52,8 @@ const ModalComponent: StorefrontComponent = ({
     buttonClass,
   )
 
+  const modalContext = useMemo(() => ({ closeModal: onClose }), [onClose]) 
+
   return (
     <Fragment>
       <div className={buttonClasses} onClick={onClick} role="button">
@@ -67,7 +74,9 @@ const ModalComponent: StorefrontComponent = ({
               blockClass
             )} flex flex-grow-1`}
           >
-            {children}
+            <Provider value={modalContext}>
+              {children}
+            </Provider>
           </div>
         </Modal>
       </div>

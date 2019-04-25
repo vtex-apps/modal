@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.1] - 2019-04-25
+
 ## [0.1.0] - 2019-04-22
+### Added
+- ModalContext, Provider and consumer.
+
 ### Added
 
 - **Component** Create the VTEX Store Component Modal
