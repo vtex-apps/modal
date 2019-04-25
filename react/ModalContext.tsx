@@ -3,7 +3,7 @@ import React, { createContext } from 'react'
 const { Consumer, Provider } = createContext({})
 
 interface ModalContext {
-  modalContext: any
+  closeModal: () => void
 }
 
 const modalConsumer = <P extends object>(
