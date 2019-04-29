@@ -8,6 +8,7 @@ import React, {
 } from 'react'
 import classNames from 'classnames'
 import { generateBlockClass, BlockClass } from '@vtex/css-handles'
+import { defineMessages } from 'react-intl'
 //@ts-ignore
 import { Modal } from 'vtex.styleguide'
 
@@ -93,55 +94,122 @@ ModalComponent.defaultProps = {
   buttonClass: null,
 }
 
+const messages = defineMessages({
+  modalTitle: {
+    defaultMessage: 'Modal Component',
+    id: 'admin/editor.modal.title',
+  },
+  modalDescription: {
+    defaultMessage: 'A component that allows to display other blocks inside it as a modal.',
+    id: 'admin/editor.modal.description',
+  },
+  centeredTitle: {
+    defaultMessage: 'Centered',
+    id: 'admin/editor.modal.centered.title',
+  },
+  centeredDescription: {
+    defaultMessage: 'Set to true if component should be centered on screen',
+    id: 'admin/editor.modal.centered.description',
+  },
+  closeOnEscTitle: {
+    defaultMessage: 'Close on Esc',
+    id: 'admin/editor.modal.closeOnEsc.title',
+  },
+  closeOnEscDescription: {
+    defaultMessage: 'Set to true if modal should close when esc key is pressed',
+    id: 'admin/editor.modal.closeOnEsc.description',
+  },
+  closeOnOverlayClickTitle: {
+    defaultMessage: 'Close on overlay click',
+    id: 'admin/editor.modal.closeOnOverlayClick.title',
+  },
+  closeOnOverlayClickDescription: {
+    defaultMessage: 'Set to true if modal should close when pressing on outside area',
+    id: 'admin/editor.modal.closeOnOverlayClick.description',
+  },
+  showCloseIconTitle: {
+    defaultMessage: 'Show close icon',
+    id: 'admin/editor.modal.showCloseIcon.title',
+  },
+  showCloseIconDescription: {
+    defaultMessage: 'Set to true if modal should display close icon',
+    id: 'admin/editor.modal.showCloseIcon.description',
+  },
+  buttonLabelTitle: {
+    defaultMessage: 'Button Label',
+    id: 'admin/editor.modal.buttonLabel.title',
+  },
+  buttonLabelDescription: {
+    defaultMessage: 'Set the label displayed on button to open modal',
+    id: 'admin/editor.modal.buttonLabel.description',
+  },
+  buttonClassTitle: {
+    defaultMessage: 'Button class',
+    id: 'admin/editor.modal.buttonClass.title',
+  },
+  buttonClassDescription: {
+    defaultMessage: 'Pass extra tachyon classes to button container',
+    id: 'admin/editor.modal.buttonClass.description',
+  },
+  blockClassTitle: {
+    defaultMessage: 'Block class',
+    id: 'admin/editor.modal.blockClass.title',
+  },
+  blockClassDescription: {
+    defaultMessage: 'Unique class name to be appended to block classes',
+    id: 'admin/editor.modal.blockClass.description',
+  },
+})
+
 ModalComponent.schema = {
-  title: 'admin/editor.modal.title',
-  description: 'admin/editor.modal.description',
+  title: messages.modalTitle.id,
+  description: messages.modalDescription.id,
   type: 'object',
   properties: {
     centered: {
-      title: 'admin/editor.modal.centered.title',
-      description: 'admin/editor.modal.centered.description',
+      title: messages.centeredTitle.id,
+      description: messages.centeredDescription.id,
       type: 'boolean',
       default: false,
       isLayout: true,
     },
     closeOnEsc: {
-      title: 'admin/editor.modal.closeOnEsc.title',
-      description: 'admin/editor.modal.closeOnEsc.description',
+      title: messages.closeOnEscTitle.id,
+      description: messages.closeOnEscDescription.id,
       type: 'boolean',
       default: true,
       isLayout: true,
     },
     closeOnOverlayClick: {
-      title: 'admin/editor.modal.closeOnOverlayClick.title',
-      description: 'admin/editor.modal.closeOnOverlayClick.description',
+      title: messages.closeOnOverlayClickTitle.id,
+      description: messages.closeOnOverlayClickDescription.id,
       type: 'boolean',
       default: true,
       isLayout: true,
     },
     showCloseIcon: {
-      title: 'admin/editor.modal.showCloseIcon.title',
-      description: 'admin/editor.modal.showCloseIcon.description',
+      title: messages.showCloseIconTitle.id,
+      description: messages.showCloseIconDescription.id,
       type: 'boolean',
       default: true,
       isLayout: true,
     },
     buttonLabel: {
-      title: 'admin/editor.modal.buttonLabel.title',
-      description: 'admin/editor.modal.buttonLabel.description',
+      title: messages.buttonLabelTitle.id,
+      description: messages.buttonLabelDescription.id,
       type: 'string',
       default: '',
     },
     buttonClass: {
-      title: 'admin/editor.modal.buttonClass.title',
-      description: 'admin/editor.modal.buttonClass.description',
+      title: messages.buttonLabelTitle.id,
+      description: messages.buttonLabelDescription.id,
       type: 'string',
       default: null,
       isLayout: true,
     },
     blockClass: {
-      title: 'admin/editor.modal.blockClass.title',
-      description: 'admin/editor.modal.blockClass.description',
+      title: messages.blockClassTitle.id,
+      description: messages.blockClassDescription.id,
       type: 'string',
       default: null,
       isLayout: true,
