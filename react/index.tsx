@@ -103,24 +103,28 @@ ModalComponent.schema = {
       description: 'editor.modal.centered.description',
       type: 'boolean',
       default: false,
+      isLayout: true,
     },
     closeOnEsc: {
       title: 'editor.modal.closeOnEsc.title',
       description: 'editor.modal.closeOnEsc.description',
       type: 'boolean',
       default: true,
+      isLayout: true,
     },
     closeOnOverlayClick: {
       title: 'editor.modal.closeOnOverlayClick.title',
       description: 'editor.modal.closeOnOverlayClick.description',
       type: 'boolean',
       default: true,
+      isLayout: true,
     },
     showCloseIcon: {
       title: 'editor.modal.showCloseIcon.title',
       description: 'editor.modal.showCloseIcon.description',
       type: 'boolean',
       default: true,
+      isLayout: true,
     },
     buttonLabel: {
       title: 'editor.modal.buttonLabel.title',
@@ -133,12 +137,14 @@ ModalComponent.schema = {
       description: 'editor.modal.buttonClass.description',
       type: 'string',
       default: null,
+      isLayout: true,
     },
     blockClass: {
       title: 'editor.modal.blockClass.title',
       description: 'editor.modal.blockClass.description',
       type: 'string',
       default: null,
+      isLayout: true,
     },
   },
 }
