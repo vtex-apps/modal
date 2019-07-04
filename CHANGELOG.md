@@ -7,20 +7,32 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- New props `showTopBar` and `title`.
+
 ## [0.1.4] - 2019-04-29
+
 ### Changed
+
 - Use defineMessages and get rid of messages folder.
 
 ## [0.1.3] - 2019-04-29
+
 ### Fixed
+
 - Scope messages.
 
 ## [0.1.2] - 2019-04-29
+
 ### Fixed
+
 - Put `isLayout: true,` to proper props on schema.
 
 ## [0.1.1] - 2019-04-25
+
 ### Added
+
 - ModalContext, Provider and consumer.
 
 ## [0.1.0] - 2019-04-22

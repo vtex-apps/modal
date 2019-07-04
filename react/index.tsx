@@ -26,6 +26,8 @@ interface ModalProps {
   children: ReactElement
   buttonLabel: string
   buttonClass: string | null
+  showTopBar: boolean
+  title?: string
 }
 
 interface StorefrontComponent
@@ -42,6 +44,8 @@ const ModalComponent: StorefrontComponent = ({
   buttonLabel,
   buttonClass,
   blockClass,
+  showTopBar,
+  title,
 }) => {
   const [isOpen, setOpen] = useState(false)
   const onClick = useCallback(() => setOpen(true), [])
@@ -68,6 +72,8 @@ const ModalComponent: StorefrontComponent = ({
           closeOnEsc={closeOnEsc}
           closeOnOverlayClick={closeOnOverlayClick}
           showCloseIcon={showCloseIcon}
+          showTopBar={showTopBar}
+          title={title}
         >
           <div
             className={`${generateBlockClass(
@@ -92,6 +98,7 @@ ModalComponent.defaultProps = {
   showCloseIcon: true,
   buttonLabel: '',
   buttonClass: null,
+  showTopBar: true,
 }
 
 const messages = defineMessages({
