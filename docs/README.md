@@ -1,5 +1,7 @@
 
-# VTEX Modal
+# VTEX Modal ![https://img.shields.io/badge/-Deprecated-red](https://img.shields.io/badge/-Deprecated-red)
+
+:warning: **The modal block has been deprecated in favor of the [Modal Layout](https://vtex.io/docs/components/all/vtex.modal-layout) app**. Although support for this block is still granted, we strongly recommend you to update your store theme with the Modal Layout's blocks in order to keep up with the component's evolution.
 
 ## Description
 
