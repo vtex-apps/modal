@@ -33,5 +33,6 @@
     "react-testing-library": "^6.0.0",
     "typescript": "3.5.2",
     "typescript-babel-jest": "^1.0.6"
-  }
+  },
+  "version": "0.2.2"
 }
